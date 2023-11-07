@@ -49,7 +49,7 @@ const loop = () => {
     const marioPosition = window
       .getComputedStyle(mario)
       .bottom.replace('px', ' ')
-
+      
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
       pipe.classList.remove('.pipe-animation')
       pipe.style.left = `${pipePosition}px`
@@ -76,9 +76,28 @@ const loop = () => {
       
       gameOver.style.display = 'flex'
       
-      clearInterval(loop)
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
   }, 10)
+  clearInterval(loop)
 }
 
 loop()
